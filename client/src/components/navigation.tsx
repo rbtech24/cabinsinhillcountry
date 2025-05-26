@@ -16,11 +16,11 @@ export default function Navigation() {
   };
 
   const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "Things to Do", href: "#things-to-do" },
-    { label: "Destinations", href: "#destinations" },
-    { label: "Events", href: "#events" },
-    { label: "Blog", href: "#blog" },
+    { label: "Home", href: "/" },
+    { label: "Things to Do", href: "/things-to-do" },
+    { label: "Destinations", href: "/destinations" },
+    { label: "Events", href: "/events" },
+    { label: "Blog", href: "/blog" },
   ];
 
   return (
@@ -41,13 +41,13 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8 items-center">
             {navItems.map((item) => (
-              <button
+              <Link
                 key={item.label}
-                onClick={() => scrollToSection(item.href.substring(1))}
+                href={item.href}
                 className="hover:text-texas-chocolate transition-colors font-medium text-texas-slate"
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
             <Button 
               className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full px-6"
@@ -67,13 +67,14 @@ export default function Navigation() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col space-y-4 mt-8">
                 {navItems.map((item) => (
-                  <button
+                  <Link
                     key={item.label}
-                    onClick={() => scrollToSection(item.href.substring(1))}
+                    href={item.href}
                     className="text-left hover:text-texas-chocolate transition-colors font-medium text-texas-slate py-2"
+                    onClick={() => setIsOpen(false)}
                   >
                     {item.label}
-                  </button>
+                  </Link>
                 ))}
                 <Button 
                   className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full mt-4"

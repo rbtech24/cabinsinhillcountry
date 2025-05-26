@@ -1,4 +1,5 @@
 import { Mountain, Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
