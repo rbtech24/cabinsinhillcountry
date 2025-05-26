@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 45 29% 97%; /* #F5F5DC - texas-beige */
+  --foreground: 180 25% 25%; /* #2F4F4F - texas-slate */
+  --muted: 45 29% 94%;
+  --muted-foreground: 180 15% 35%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 180 25% 25%;
+  --card: 0 0% 100%;
+  --card-foreground: 180 25% 25%;
+  --border: 45 20% 85%;
+  --input: 45 20% 85%;
+  --primary: 22 69% 51%; /* #D2691E - texas-chocolate */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 45 29% 94%;
+  --secondary-foreground: 180 25% 25%;
+  --accent: 45 29% 94%;
+  --accent-foreground: 180 25% 25%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 180 25% 25%;
+  --radius: 0.5rem;
+
+  /* Custom Hill Country colors */
+  --texas-brown: 22 75% 31%; /* #8B4513 */
+  --texas-chocolate: 22 69% 51%; /* #D2691E */
+  --texas-peach: 28 100% 64%; /* #FFB347 */
+  --texas-purple: 270 61% 65%; /* #9370DB */
+  --texas-beige: 45 29% 97%; /* #F5F5DC */
+  --texas-slate: 180 25% 25%; /* #2F4F4F */
+  --texas-green: 120 61% 34%; /* #228B22 */
+}
+
+.dark {
+  --background: 180 25% 10%;
+  --foreground: 0 0% 98%;
+  --muted: 180 25% 15%;
+  --muted-foreground: 180 15% 65%;
+  --popover: 180 25% 10%;
+  --popover-foreground: 0 0% 98%;
+  --card: 180 25% 10%;
+  --card-foreground: 0 0% 98%;
+  --border: 180 25% 20%;
+  --input: 180 25% 20%;
+  --primary: 22 69% 51%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 180 25% 15%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 180 25% 15%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 180 15% 65%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  /* Custom font families */
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-cabin {
+    font-family: 'Cabin', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-texas-brown {
+    color: hsl(var(--texas-brown));
+  }
+  
+  .text-texas-chocolate {
+    color: hsl(var(--texas-chocolate));
+  }
+  
+  .text-texas-peach {
+    color: hsl(var(--texas-peach));
+  }
+  
+  .text-texas-purple {
+    color: hsl(var(--texas-purple));
+  }
+  
+  .text-texas-beige {
+    color: hsl(var(--texas-beige));
+  }
+  
+  .text-texas-slate {
+    color: hsl(var(--texas-slate));
+  }
+  
+  .text-texas-green {
+    color: hsl(var(--texas-green));
+  }
+  
+  .bg-texas-brown {
+    background-color: hsl(var(--texas-brown));
+  }
+  
+  .bg-texas-chocolate {
+    background-color: hsl(var(--texas-chocolate));
+  }
+  
+  .bg-texas-peach {
+    background-color: hsl(var(--texas-peach));
+  }
+  
+  .bg-texas-purple {
+    background-color: hsl(var(--texas-purple));
+  }
+  
+  .bg-texas-beige {
+    background-color: hsl(var(--texas-beige));
+  }
+  
+  .bg-texas-slate {
+    background-color: hsl(var(--texas-slate));
+  }
+  
+  .bg-texas-green {
+    background-color: hsl(var(--texas-green));
+  }
+
+  .border-texas-brown {
+    border-color: hsl(var(--texas-brown));
+  }
+  
+  .border-texas-chocolate {
+    border-color: hsl(var(--texas-chocolate));
+  }
+  
+  .border-texas-peach {
+    border-color: hsl(var(--texas-peach));
+  }
+  
+  .border-texas-purple {
+    border-color: hsl(var(--texas-purple));
+  }
+  
+  .border-texas-beige {
+    border-color: hsl(var(--texas-beige));
+  }
+  
+  .border-texas-slate {
+    border-color: hsl(var(--texas-slate));
+  }
+  
+  .border-texas-green {
+    border-color: hsl(var(--texas-green));
+  }
+
+  .hover\:bg-texas-brown:hover {
+    background-color: hsl(var(--texas-brown));
+  }
+  
+  .hover\:bg-texas-chocolate:hover {
+    background-color: hsl(var(--texas-chocolate));
+  }
+  
+  .hover\:text-texas-chocolate:hover {
+    color: hsl(var(--texas-chocolate));
+  }
+  
+  .hover\:text-texas-brown:hover {
+    color: hsl(var(--texas-brown));
+  }
+}
