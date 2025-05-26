@@ -200,44 +200,44 @@ export class MemStorage implements IStorage {
     // Blog Posts
     const sampleBlogPosts: InsertBlogPost[] = [
       {
-        title: "Best Time to See Wildflowers in Hill Country",
-        excerpt: "Discover when and where to find the most spectacular wildflower displays, including the famous Texas bluebonnets.",
+        title: "2025 Hill Country Wildflower Season: Complete Guide to Texas Bluebonnets and Beyond",
+        excerpt: "Everything you need to know about the 2025 wildflower season in Texas Hill Country. From prime viewing locations along Highway 290 to the best photography spots in Fredericksburg, discover when and where to see Texas bluebonnets, Indian paintbrush, and evening primrose at their peak. Includes insider tips from local botanists, hidden viewing areas away from crowds, weather impact on bloom timing, and a detailed month-by-month blooming calendar. Perfect for photographers, nature lovers, and families planning their Hill Country wildflower adventure.",
         imageUrl: "https://images.unsplash.com/photo-1458419948946-19fb2cc296af?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
-        category: "Travel Guide",
-        date: "March 10, 2024",
-        slug: "best-time-wildflowers-hill-country"
+        category: "Seasonal Guide",
+        date: "May 20, 2025",
+        slug: "2025-hill-country-wildflower-bluebonnet-complete-guide"
       },
       {
-        title: "Top 10 Luxury Cabins for Your Hill Country Getaway",
-        excerpt: "From romantic retreats to family-friendly lodges, explore the most beautiful and well-appointed cabins in the region.",
-        imageUrl: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
-        category: "Accommodation",
-        date: "March 5, 2024",
-        slug: "top-10-luxury-cabins"
-      },
-      {
-        title: "Ultimate Guide to Hill Country Wine Trail",
-        excerpt: "Plan the perfect wine tasting adventure with our insider's guide to the best wineries, tasting rooms, and wine events.",
+        title: "Texas Hill Country Wine Trail: 50+ Wineries, Tastings, and Award-Winning Vineyards",
+        excerpt: "Explore the thriving Texas Hill Country wine region with our comprehensive guide to over 50 wineries spanning from Fredericksburg to Dripping Springs. Discover world-class Tempranillo at Becker Vineyards, sample unique Viognier at Grape Creek Vineyards, and experience the renowned Sangiovese at Fall Creek Vineyards. This complete wine lover's guide includes detailed tasting notes, food pairing recommendations, seasonal harvest events, winery tour packages, and exclusive behind-the-scenes access with vineyard owners. Learn about the unique terroir that makes Hill Country wines special and plan the perfect wine country weekend.",
         imageUrl: "https://images.unsplash.com/photo-1510076857177-7470076d4098?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
         category: "Wine & Dining",
-        date: "February 28, 2024",
-        slug: "hill-country-wine-trail-guide"
+        date: "May 15, 2025",
+        slug: "texas-hill-country-wine-trail-complete-guide-2025"
       },
       {
-        title: "Family-Friendly Adventures in Hill Country",
-        excerpt: "Create lasting memories with activities perfect for kids and adults, from river tubing to cave exploring.",
+        title: "Hidden Swimming Holes and Natural Springs: Local's Guide to Hill Country's Best Swimming Spots",
+        excerpt: "Discover the most pristine swimming holes, natural springs, and crystal-clear pools hidden throughout Texas Hill Country. From the famous Jacob's Well in Wimberley to the secluded Blue Hole in Leakey, explore swimming destinations that locals have cherished for generations. This comprehensive guide covers water temperatures year-round, accessibility and parking information, safety guidelines, and conservation efforts to protect these natural treasures. Includes lesser-known gems like Krause Springs, Hamilton Pool Preserve, and the Frio River's best access points, plus insider tips on avoiding crowds and respecting private property.",
+        imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+        category: "Outdoor Adventure",
+        date: "May 10, 2025",
+        slug: "hill-country-swimming-holes-natural-springs-guide"
+      },
+      {
+        title: "Hill Country BBQ Trail: Authentic Texas Barbecue and Legendary Smokehouse Traditions",
+        excerpt: "Embark on the ultimate barbecue pilgrimage through Texas Hill Country's legendary smokehouse scene. From the world-famous Salt Lickers BBQ in Driftwood to hidden gem pitmasters in small towns like Llano and Junction, discover the authentic flavors and time-honored traditions that make Hill Country BBQ a destination for food lovers worldwide. This definitive guide features interviews with third-generation pitmasters, detailed profiles of signature dishes, smoking techniques passed down through families, and the fascinating history behind each establishment. Includes must-try items, pricing guides, operating hours, and recipes you can try at home.",
+        imageUrl: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+        category: "Food & Culture",
+        date: "May 5, 2025",
+        slug: "hill-country-bbq-trail-authentic-texas-barbecue-guide"
+      },
+      {
+        title: "Family Adventures in Hill Country: 25+ Kid-Friendly Activities and Educational Experiences",
+        excerpt: "Create unforgettable family memories in Texas Hill Country with our comprehensive guide to child-friendly adventures and educational experiences. Explore underground wonders at Natural Bridge Caverns and Wonder World Cave, experience authentic ranch life at Mayan Dude Ranch and Dixie Dude Ranch, enjoy river tubing on the Guadalupe and Comal Rivers, and discover hands-on learning at the National Museum of the Pacific War in Fredericksburg. This family travel guide includes age-appropriate recommendations, seasonal considerations, pricing information, and special accommodation packages designed for families. Perfect for parents planning multi-generational trips or educational vacations.",
         imageUrl: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
         category: "Family Travel",
-        date: "February 20, 2024",
-        slug: "family-friendly-adventures"
-      },
-      {
-        title: "Perfect Romantic Getaway Ideas",
-        excerpt: "Plan an unforgettable romantic escape with intimate dining, couples' activities, and the most scenic spots for two.",
-        imageUrl: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
-        category: "Romance",
-        date: "February 15, 2024",
-        slug: "romantic-getaway-ideas"
+        date: "April 30, 2025",
+        slug: "family-adventures-hill-country-kids-activities-guide"
       }
     ];
 
