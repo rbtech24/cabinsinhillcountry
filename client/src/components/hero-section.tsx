@@ -12,7 +12,7 @@ export default function HeroSection() {
     <section id="home" className="relative h-screen flex items-center justify-center">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-        style={{backgroundImage: "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"}}
+        style={{backgroundImage: "url('@assets/Hill Country Texas.jpg')"}}
       ></div>
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       
