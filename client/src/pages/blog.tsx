@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import NewsletterSignup from "@/components/newsletter-signup";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight, Clock, User } from "lucide-react";
@@ -191,20 +192,8 @@ export default function BlogPage() {
 
       {/* Newsletter Signup */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="font-playfair text-3xl font-bold text-texas-brown mb-4">Stay Updated</h2>
-          <p className="text-lg text-texas-slate mb-8 max-w-2xl mx-auto">Get the latest Hill Country travel tips, seasonal guides, and exclusive cabin deals delivered to your inbox.</p>
-          
-          <div className="max-w-md mx-auto flex gap-3">
-            <input 
-              type="email" 
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 border border-texas-beige rounded-full focus:outline-none focus:ring-2 focus:ring-texas-chocolate"
-            />
-            <Button className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full px-6">
-              Subscribe
-            </Button>
-          </div>
+        <div className="container mx-auto px-4">
+          <NewsletterSignup />
         </div>
       </section>
 

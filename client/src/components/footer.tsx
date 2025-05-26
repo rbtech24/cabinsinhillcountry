@@ -1,5 +1,6 @@
 import { Mountain, Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lucide-react";
 import { Link } from "wouter";
+import NewsletterSignup from "@/components/newsletter-signup";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -18,7 +19,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="md:col-span-2">
+          <div>
             <div className="flex items-center space-x-3 mb-6">
               <div className="bg-texas-chocolate text-white p-3 rounded-lg">
                 <Mountain className="text-xl" />
@@ -120,6 +121,11 @@ export default function Footer() {
                 <span className="opacity-90">24/7 Support Available</span>
               </div>
             </div>
+          </div>
+
+          {/* Newsletter Signup */}
+          <div>
+            <NewsletterSignup variant="footer" />
           </div>
         </div>
 
