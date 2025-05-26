@@ -45,44 +45,44 @@ export default function Footer() {
             <h4 className="font-playfair text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <button 
-                  onClick={() => scrollToSection('home')}
-                  className="opacity-90 hover:opacity-100 transition-opacity text-left"
+                <Link 
+                  href="/"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
                 >
                   Home
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('things-to-do')}
-                  className="opacity-90 hover:opacity-100 transition-opacity text-left"
+                <Link 
+                  href="/things-to-do"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
                 >
                   Things to Do
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('destinations')}
-                  className="opacity-90 hover:opacity-100 transition-opacity text-left"
+                <Link 
+                  href="/destinations"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
                 >
                   Destinations
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('events')}
-                  className="opacity-90 hover:opacity-100 transition-opacity text-left"
+                <Link 
+                  href="/events"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
                 >
                   Events
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('blog')}
-                  className="opacity-90 hover:opacity-100 transition-opacity text-left"
+                <Link 
+                  href="/blog"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
                 >
                   Blog
-                </button>
+                </Link>
               </li>
               <li>
                 <a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Booking</a>
