@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-texas-slate text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-5 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
@@ -118,11 +118,35 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="w-4 h-4" />
-                <span className="opacity-90">24/7 Support Available</span>
+                <span className="opacity-90">Mon-Sun: 9AM-7PM CST</span>
               </div>
             </div>
           </div>
 
+          {/* Destinations */}
+          <div>
+            <h4 className="font-playfair text-lg font-bold mb-4">Popular Destinations</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="/destinations" className="opacity-90 hover:opacity-100 transition-opacity">Fredericksburg</a>
+              </li>
+              <li>
+                <a href="/destinations" className="opacity-90 hover:opacity-100 transition-opacity">Wimberley</a>
+              </li>
+              <li>
+                <a href="/destinations" className="opacity-90 hover:opacity-100 transition-opacity">Austin</a>
+              </li>
+              <li>
+                <a href="/destinations" className="opacity-90 hover:opacity-100 transition-opacity">New Braunfels</a>
+              </li>
+              <li>
+                <a href="/destinations" className="opacity-90 hover:opacity-100 transition-opacity">San Marcos</a>
+              </li>
+              <li>
+                <a href="/destinations" className="opacity-90 hover:opacity-100 transition-opacity">Dripping Springs</a>
+              </li>
+            </ul>
+          </div>
 
         </div>
 
