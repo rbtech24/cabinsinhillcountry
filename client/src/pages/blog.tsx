@@ -190,12 +190,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Newsletter Signup */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <NewsletterSignup />
-        </div>
-      </section>
+
 
       {/* Call to Action */}
       <section className="py-16 bg-texas-brown text-white">

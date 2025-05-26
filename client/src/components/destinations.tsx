@@ -36,27 +36,26 @@ export default function Destinations() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          {destinations?.map((destination) => (
-            <Card key={destination.id} className="relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src={destination.imageUrl} 
-                alt={destination.name} 
-                className="w-full h-64 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="font-playfair text-2xl font-bold mb-2">{destination.name}</h3>
-                <p className="text-sm mb-3">{destination.description}</p>
-                <div className="flex items-center space-x-4 text-sm">
-                  {destination.highlights.map((highlight, index) => (
-                    <span key={index}>
-                      <i className="fas fa-star mr-1"></i> {highlight}
-                    </span>
-                  ))}
+          {destinations?.map((destination, index) => {
+            const colors = ['bg-texas-chocolate', 'bg-texas-purple', 'bg-texas-green', 'bg-texas-brown'];
+            const bgColor = colors[index % colors.length];
+            
+            return (
+              <Card key={destination.id} className={`relative ${bgColor} rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow`}>
+                <div className="p-6 text-white h-64 flex flex-col justify-end">
+                  <h3 className="font-playfair text-2xl font-bold mb-2">{destination.name}</h3>
+                  <p className="text-sm mb-3">{destination.description}</p>
+                  <div className="flex items-center space-x-4 text-sm">
+                    {destination.highlights.map((highlight, index) => (
+                      <span key={index}>
+                        <i className="fas fa-star mr-1"></i> {highlight}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </Card>
-          ))}
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
