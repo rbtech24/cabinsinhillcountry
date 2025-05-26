@@ -79,7 +79,7 @@ export default function Home() {
             <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-6">Ready for Your Hill Country Adventure?</h2>
             <p className="text-xl mb-8 opacity-90">Book your perfect cabin retreat and start creating unforgettable memories in the heart of Texas.</p>
             <div className="space-x-4">
-              <a href="#" className="bg-texas-peach text-texas-slate px-8 py-3 rounded-full text-lg font-semibold hover:bg-white transition-colors inline-block">Book Your Stay</a>
+              <a href="https://wimberleycabins.com/" target="_blank" rel="noopener noreferrer" className="bg-texas-peach text-texas-slate px-8 py-3 rounded-full text-lg font-semibold hover:bg-white transition-colors inline-block">Book Your Stay</a>
               <a href="#contact" className="border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-texas-brown transition-colors inline-block">Contact Us</a>
             </div>
           </div>

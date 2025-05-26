@@ -95,7 +95,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Booking</a>
+                <a href="https://wimberleycabins.com/" target="_blank" rel="noopener noreferrer" className="opacity-90 hover:opacity-100 transition-opacity">Booking</a>
               </li>
             </ul>
           </div>

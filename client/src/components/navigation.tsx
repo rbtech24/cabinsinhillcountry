@@ -54,12 +54,14 @@ export default function Navigation() {
                 {item.label}
               </Link>
             ))}
-            <Button 
-              className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full px-6"
-              onClick={() => scrollToSection('contact')}
+            <a 
+              href="https://wimberleycabins.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full px-6 py-2 font-medium transition-colors inline-block"
             >
               Book Now
-            </Button>
+            </a>
           </div>
 
           {/* Mobile Menu */}
@@ -84,12 +86,15 @@ export default function Navigation() {
                     {item.label}
                   </Link>
                 ))}
-                <Button 
-                  className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full mt-4"
-                  onClick={() => scrollToSection('contact')}
+                <a 
+                  href="https://wimberleycabins.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full mt-4 px-6 py-2 font-medium transition-colors inline-block text-center"
+                  onClick={() => setIsOpen(false)}
                 >
                   Book Now
-                </Button>
+                </a>
               </div>
             </SheetContent>
           </Sheet>
