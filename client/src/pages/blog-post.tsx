@@ -591,13 +591,13 @@ export default function BlogPostPage() {
           <Card className="bg-white shadow-lg">
             <div className="p-8 md:p-12">
               <div 
-                className="prose prose-lg max-w-none"
-                dangerouslySetInnerHTML={{ 
-                  __html: getFullContent(blogPost).replace(/\n/g, '').replace(/  +/g, ' ')
-                }}
+                className="prose prose-lg max-w-none prose-headings:text-texas-brown prose-headings:font-playfair prose-p:text-texas-slate prose-ul:text-texas-slate prose-li:text-texas-slate"
                 style={{
                   lineHeight: '1.8',
                   fontSize: '18px'
+                }}
+                dangerouslySetInnerHTML={{ 
+                  __html: getFullContent(blogPost)
                 }}
               />
               
