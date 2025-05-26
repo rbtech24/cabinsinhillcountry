@@ -51,6 +51,12 @@ export default function BlogPage() {
       
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center bg-texas-brown">
+        <img 
+          src="/attached_assets/shutterstock_1979902337.jpg" 
+          alt="Texas Hill Country Bluebonnets" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <div className="relative z-10 text-center text-white px-4 max-w-4xl">
           <h1 className="font-playfair text-5xl md:text-6xl font-bold mb-4">Travel Blog</h1>
           <p className="text-xl md:text-2xl font-light">Insider tips and local stories from Hill Country</p>

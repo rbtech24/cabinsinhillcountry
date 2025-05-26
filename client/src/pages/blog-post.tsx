@@ -546,8 +546,14 @@ export default function BlogPostPage() {
     <div className="min-h-screen bg-texas-cream">
       <Navigation />
       {/* Header */}
-      <div className="bg-texas-brown text-white py-16">
-        <div className="container mx-auto px-4">
+      <div className="relative bg-texas-brown text-white py-16">
+        <img 
+          src="/attached_assets/shutterstock_1979902337.jpg" 
+          alt="Texas Hill Country Bluebonnets" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <Link href="/blog" className="inline-flex items-center text-texas-peach hover:text-white mb-6 transition-colors">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Blog
