@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import heroImage from "@assets/Hill Country Texas.jpg";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -12,7 +13,7 @@ export default function HeroSection() {
     <section id="home" className="relative h-screen flex items-center justify-center">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-        style={{backgroundImage: "url('@assets/Hill Country Texas.jpg')"}}
+        style={{backgroundImage: `url(${heroImage})`}}
       ></div>
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       
