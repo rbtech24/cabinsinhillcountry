@@ -143,9 +143,52 @@ export class MemStorage implements IStorage {
 
     // Events
     const sampleEvents: InsertEvent[] = [
+      // Ongoing Events
+      {
+        title: "Live Music at Gruene Hall",
+        description: "Texas's oldest dance hall hosts live music almost nightly featuring country, blues, and Americana artists in an authentic historic venue.",
+        date: "Ongoing - Check Schedule",
+        location: "Gruene, TX",
+        category: "Music",
+        icon: "fas fa-music"
+      },
+      {
+        title: "Live Music at Luckenbach Dance Hall",
+        description: "Iconic Texas dance hall with regular schedule of country and Americana artists in the heart of Hill Country.",
+        date: "Ongoing - Check Schedule",
+        location: "Luckenbach, TX",
+        category: "Music",
+        icon: "fas fa-music"
+      },
+      {
+        title: "First Friday Art Walk",
+        description: "Galleries and shops extend hours and host special showings showcasing local Hill Country artists and craftspeople.",
+        date: "First Friday of Each Month",
+        location: "Fredericksburg, TX",
+        category: "Arts & Culture",
+        icon: "fas fa-palette"
+      },
+      {
+        title: "Gruene Market Days",
+        description: "Monthly market featuring nearly 100 artisans, live entertainment, and food vendors in historic Gruene.",
+        date: "Third Weekend Each Month",
+        location: "Gruene, TX",
+        category: "Market",
+        icon: "fas fa-shopping-bag"
+      },
+      {
+        title: "Hill Country Wineries Passport Events",
+        description: "Signature passport events allowing tasting at multiple wineries with one pass throughout the year.",
+        date: "Various Dates 2025",
+        location: "Various Wineries",
+        category: "Wine",
+        icon: "fas fa-wine-glass-alt"
+      },
+      
+      // June 2025
       {
         title: "53rd Annual Kerrville Folk Festival",
-        description: "Long-standing folk music festival with multiple stages, camping, workshops, and performances by renowned folk artists from across the country.",
+        description: "Long-standing folk music festival with multiple stages, camping, workshops, and performances by renowned folk artists.",
         date: "May 22 - June 8, 2025",
         location: "Kerrville, TX",
         category: "Music Festival",
@@ -153,23 +196,191 @@ export class MemStorage implements IStorage {
       },
       {
         title: "Blanco Lavender Festival",
-        description: "Celebrates the lavender harvest with vendors, food, live music, and guided lavender farm tours throughout the beautiful Hill Country.",
+        description: "Celebrates the lavender harvest with vendors, food, live music, and guided lavender farm tours.",
         date: "June 6-8, 2025",
         location: "Blanco, TX",
         category: "Seasonal",
         icon: "fas fa-seedling"
       },
       {
+        title: "ATX Television Festival",
+        description: "Showcasing the past, present, and future of TV with panels, screenings, and Q&As with industry professionals.",
+        date: "May 29 - June 1, 2025",
+        location: "Austin, TX",
+        category: "Entertainment",
+        icon: "fas fa-tv"
+      },
+      {
+        title: "Central Texas Juneteenth Celebration",
+        description: "Annual parade and celebration in East Austin commemorating the end of slavery in Texas.",
+        date: "June 19, 2025",
+        location: "Austin, TX",
+        category: "Cultural",
+        icon: "fas fa-flag"
+      },
+      {
+        title: "Fredericksburg Music Festival",
+        description: "Classical music performances and educational programs featuring renowned musicians.",
+        date: "June 8-21, 2025",
+        location: "Fredericksburg, TX",
+        category: "Music",
+        icon: "fas fa-music"
+      },
+      {
+        title: "Driftwood Chiggerfest",
+        description: "Local festival with live music and community focus celebrating Driftwood's unique character.",
+        date: "June 14-15, 2025",
+        location: "Driftwood, TX",
+        category: "Community",
+        icon: "fas fa-star"
+      },
+      {
+        title: "Fredericksburg Trade Days",
+        description: "Large outdoor market with antiques, crafts, and unique finds from vendors across Texas.",
+        date: "June 20-22, 2025",
+        location: "Fredericksburg, TX",
+        category: "Market",
+        icon: "fas fa-shopping-bag"
+      },
+      {
         title: "Stonewall Peach JAMboree & Rodeo",
-        description: "Celebrates the famous Hill Country peach harvest with authentic rodeo events, live music, and delicious peach dishes and desserts.",
+        description: "Celebrates the famous Hill Country peach harvest with rodeo events, live music, and peach dishes.",
         date: "June 19-21, 2025",
         location: "Stonewall, TX",
         category: "Rodeo & Food",
         icon: "fas fa-horse"
       },
       {
+        title: "Austin Asian American Film Festival",
+        description: "Showcases Asian American filmmakers and perspectives with screenings and discussions.",
+        date: "June 25-29, 2025",
+        location: "Austin, TX",
+        category: "Film",
+        icon: "fas fa-film"
+      },
+      {
+        title: "Watermelon Thump",
+        description: "Iconic festival celebrating watermelons with contests, live music, and traditional Texas fair food.",
+        date: "June 26-29, 2025",
+        location: "Luling, TX",
+        category: "Food & Fun",
+        icon: "fas fa-apple-alt"
+      },
+
+      // July 2025
+      {
+        title: "Hill Country Fun Fest",
+        description: "Community festival with family activities, live entertainment, and local food vendors.",
+        date: "July 3, 2025",
+        location: "Kerrville, TX",
+        category: "Community",
+        icon: "fas fa-star"
+      },
+      {
+        title: "Austin Symphony July 4th Concert & Fireworks",
+        description: "Patriotic concert and spectacular fireworks display over Lady Bird Lake with the Austin Symphony.",
+        date: "July 4, 2025",
+        location: "Austin, TX",
+        category: "Holiday",
+        icon: "fas fa-flag"
+      },
+      {
+        title: "Kerrville's 4th on the River Festival",
+        description: "Free concert and fireworks celebration along the Guadalupe River.",
+        date: "July 4, 2025",
+        location: "Kerrville, TX",
+        category: "Holiday",
+        icon: "fas fa-flag"
+      },
+      {
+        title: "Hill Country Galleria Independence Day",
+        description: "Family-friendly Independence Day celebration with fireworks, music, and activities.",
+        date: "July 4, 2025",
+        location: "Bee Cave, TX",
+        category: "Holiday",
+        icon: "fas fa-flag"
+      },
+      {
+        title: "Classic Game Fest",
+        description: "Largest retro video game convention in Texas featuring classic arcade games and tournaments.",
+        date: "July 25-27, 2025",
+        location: "Austin, TX",
+        category: "Gaming",
+        icon: "fas fa-gamepad"
+      },
+      {
+        title: "MLS All Star Game",
+        description: "Major League Soccer All-Star event at Q2 Stadium featuring the best MLS players.",
+        date: "July 23, 2025",
+        location: "Austin, TX",
+        category: "Sports",
+        icon: "fas fa-futbol"
+      },
+
+      // August 2025
+      {
+        title: "Gillespie County Fair & Race Meet",
+        description: "Traditional county fair featuring horse racing, rodeo events, live music, carnival, and fair food.",
+        date: "August 15-24, 2025",
+        location: "Fredericksburg, TX",
+        category: "Fair & Rodeo",
+        icon: "fas fa-horse"
+      },
+      {
+        title: "Beer by the Bay Music Festival",
+        description: "Lakeside music festival featuring craft beer, live bands, and scenic Hill Country views.",
+        date: "August 8-9, 2025",
+        location: "Horseshoe Bay, TX",
+        category: "Music Festival",
+        icon: "fas fa-beer"
+      },
+      {
+        title: "Central Texas State Fair",
+        description: "Traditional county fair with rodeo, carnival rides, livestock shows, and authentic fair food.",
+        date: "August 28-31, 2025",
+        location: "Belton, TX",
+        category: "Fair",
+        icon: "fas fa-ferris-wheel"
+      },
+
+      // September 2025
+      {
+        title: "UT Longhorns Football Season",
+        description: "Experience the Texas Longhorns in their first SEC season at Darrell K Royal Stadium.",
+        date: "September - November 2025",
+        location: "Austin, TX",
+        category: "Sports",
+        icon: "fas fa-football-ball"
+      },
+      {
+        title: "Big Ta' Do Chili Cook-Off",
+        description: "Annual chili cook-off and car/bike show featuring authentic Texas chili and classic vehicles.",
+        date: "September 13, 2025",
+        location: "Kerrville, TX",
+        category: "Food & Cars",
+        icon: "fas fa-pepper-hot"
+      },
+      {
+        title: "Dripping Springs Pumpkin Festival",
+        description: "Family-friendly fall festival with themed weekends, activities, and pumpkin patch experiences.",
+        date: "Late September - October 2025",
+        location: "Dripping Springs, TX",
+        category: "Seasonal",
+        icon: "fas fa-leaf"
+      },
+      {
+        title: "Cold Waves Austin",
+        description: "Industrial and electronic music festival featuring underground and established artists.",
+        date: "September 19, 2025",
+        location: "Austin, TX",
+        category: "Music Festival",
+        icon: "fas fa-music"
+      },
+
+      // October 2025
+      {
         title: "Austin City Limits Music Festival",
-        description: "One of the nation's premier music festivals featuring top artists across multiple genres at the iconic Zilker Park venue.",
+        description: "One of the nation's premier music festivals featuring top artists across multiple genres at Zilker Park.",
         date: "October 3-5 & October 10-12, 2025",
         location: "Austin, TX",
         category: "Music Festival",
@@ -177,31 +388,57 @@ export class MemStorage implements IStorage {
       },
       {
         title: "Fredericksburg Oktoberfest",
-        description: "Authentic German heritage celebration with traditional polka music, German food, craft beer, and handmade crafts in the heart of Texas Hill Country.",
+        description: "Authentic German heritage celebration with polka music, German food, craft beer, and handmade crafts.",
         date: "October 3-5, 2025",
         location: "Fredericksburg, TX",
         category: "Cultural",
         icon: "fas fa-beer"
       },
       {
-        title: "Wurstfest",
-        description: "New Braunfels' famous 'Ten Day Salute To Sausage' - massive German festival featuring authentic food, beer, live music, and carnival attractions.",
-        date: "October 31 - November 9, 2025",
-        location: "New Braunfels, TX",
-        category: "Cultural",
-        icon: "fas fa-beer"
-      },
-      {
         title: "Formula 1 United States Grand Prix",
-        description: "High-speed Formula 1 racing and major concerts at Circuit of The Americas, featuring world-class drivers and entertainment.",
+        description: "High-speed Formula 1 racing and major concerts at Circuit of The Americas with world-class entertainment.",
         date: "October 17-19, 2025",
         location: "Austin, TX",
         category: "Sports",
         icon: "fas fa-flag-checkered"
       },
       {
+        title: "Austin String Band Festival",
+        description: "Festival celebrating traditional string band music with performances and workshops.",
+        date: "October 17-19, 2025",
+        location: "Driftwood, TX",
+        category: "Music",
+        icon: "fas fa-music"
+      },
+      {
+        title: "Wurstfest",
+        description: "New Braunfels' famous 'Ten Day Salute To Sausage' with German food, beer, live music, and carnival.",
+        date: "October 31 - November 9, 2025",
+        location: "New Braunfels, TX",
+        category: "Cultural",
+        icon: "fas fa-beer"
+      },
+      {
+        title: "Viva la Vida Fest",
+        description: "Austin's largest and longest-running Day of the Dead festival with art, music, and cultural celebrations.",
+        date: "Late October 2025",
+        location: "Austin, TX",
+        category: "Cultural",
+        icon: "fas fa-skull"
+      },
+      {
+        title: "Texas State Arts & Crafts Fair",
+        description: "Juried art and craft fair showcasing the finest work from Texas artists and craftspeople.",
+        date: "Late October 2025",
+        location: "Ingram, TX",
+        category: "Arts & Crafts",
+        icon: "fas fa-palette"
+      },
+
+      // November 2025
+      {
         title: "Texas Monthly BBQ Fest",
-        description: "Celebrates Texas' legendary barbecue tradition with the state's best pitmasters, live music demonstrations, and authentic Texas BBQ.",
+        description: "Celebrates Texas' legendary barbecue tradition with the state's best pitmasters and live music.",
         date: "November 1-2, 2025",
         location: "Lockhart, TX",
         category: "Food",
@@ -209,15 +446,49 @@ export class MemStorage implements IStorage {
       },
       {
         title: "Lights Spectacular",
-        description: "Johnson City transforms into 'Twinkle Town' with dazzling holiday light displays throughout the historic downtown area.",
+        description: "Johnson City transforms into 'Twinkle Town' with dazzling holiday light displays downtown.",
         date: "November 15, 2025 - January 1, 2026",
         location: "Johnson City, TX",
         category: "Holiday",
         icon: "fas fa-star"
       },
       {
+        title: "Walkway of Lights",
+        description: "Thousands of lights decorating the lakeside park creating a magical holiday experience.",
+        date: "November 15 - December 31, 2025",
+        location: "Marble Falls, TX",
+        category: "Holiday",
+        icon: "fas fa-star"
+      },
+      {
+        title: "Fredericksburg Trade Days",
+        description: "Last major outdoor market before Christmas featuring antiques, crafts, and holiday gifts.",
+        date: "November 21-23, 2025",
+        location: "Fredericksburg, TX",
+        category: "Market",
+        icon: "fas fa-shopping-bag"
+      },
+      {
+        title: "Christmas Wine Affair Passport",
+        description: "Special holiday passport for festive wine tastings at participating Hill Country wineries.",
+        date: "Late November - Mid December 2025",
+        location: "Various Wineries",
+        category: "Wine & Holiday",
+        icon: "fas fa-wine-glass-alt"
+      },
+      {
+        title: "Seismic Dance Event",
+        description: "Electronic music festival featuring world-renowned DJs and producers.",
+        date: "November 14-16, 2025",
+        location: "Austin, TX",
+        category: "Music Festival",
+        icon: "fas fa-music"
+      },
+
+      // December 2025
+      {
         title: "Fredericksburg Christmas Nights of Lights",
-        description: "German-Texas holiday celebration featuring spectacular light shows, traditional German Christmas markets, and festive entertainment.",
+        description: "German-Texas holiday celebration with spectacular light shows and traditional Christmas markets.",
         date: "November 28, 2025 - January 4, 2026",
         location: "Fredericksburg, TX",
         category: "Holiday",
@@ -225,19 +496,67 @@ export class MemStorage implements IStorage {
       },
       {
         title: "Wimberley Trail of Lights",
-        description: "Extensive holiday light display with magical walking trails through scenic Hill Country landscapes and themed light installations.",
+        description: "Extensive holiday light display with magical walking trails through scenic landscapes.",
         date: "November 28 - December 31, 2025",
         location: "Wimberley, TX",
         category: "Holiday",
         icon: "fas fa-star"
       },
       {
-        title: "Gillespie County Fair & Race Meet",
-        description: "Traditional county fair featuring horse racing, rodeo events, live country music, carnival rides, and authentic Texas fair food.",
-        date: "August 15-24, 2025",
+        title: "Festival of Texas Fiddling",
+        description: "Celebrates Texas fiddling tradition with competitions and performances at Twin Sisters Dance Hall.",
+        date: "December 5-7, 2025",
+        location: "Blanco, TX",
+        category: "Music",
+        icon: "fas fa-music"
+      },
+      {
+        title: "Christmas in Comfort",
+        description: "Holiday light park featuring the famous Crumbling Castle and festive displays.",
+        date: "Throughout December 2025",
+        location: "Comfort, TX",
+        category: "Holiday",
+        icon: "fas fa-star"
+      },
+      {
+        title: "Eisbahn Outdoor Ice Skating",
+        description: "Outdoor ice skating rink in historic Marktplatz bringing winter magic to the Hill Country.",
+        date: "Throughout December 2025",
         location: "Fredericksburg, TX",
-        category: "Fair & Rodeo",
-        icon: "fas fa-horse"
+        category: "Holiday",
+        icon: "fas fa-skating"
+      },
+      {
+        title: "Sights & Sounds of Christmas",
+        description: "Winter wonderland with ice skating, carnival rides, and holiday entertainment for families.",
+        date: "Throughout December 2025",
+        location: "San Marcos, TX",
+        category: "Holiday",
+        icon: "fas fa-star"
+      },
+      {
+        title: "Christmas Bazaar",
+        description: "Holiday shopping, Santa photos, and live music in the iconic town of Luckenbach.",
+        date: "December 7, 2025",
+        location: "Luckenbach, TX",
+        category: "Holiday & Market",
+        icon: "fas fa-gift"
+      },
+      {
+        title: "Christmas on Mercer Street",
+        description: "Holiday market, family activities, and tree lighting ceremony in downtown Dripping Springs.",
+        date: "December 7, 2025",
+        location: "Dripping Springs, TX",
+        category: "Holiday",
+        icon: "fas fa-tree"
+      },
+      {
+        title: "Hill Country Chorale Christmas Concert",
+        description: "Beautiful holiday concert featuring local choir performing traditional and contemporary Christmas music.",
+        date: "December 6, 2025",
+        location: "Kerrville, TX",
+        category: "Music",
+        icon: "fas fa-music"
       }
     ];
 
