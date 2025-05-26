@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight, Clock, User } from "lucide-react";
 import { Link } from "wouter";
 import type { BlogPost } from "@shared/schema";
+import bluebonnetImage from "@assets/shutterstock_1979902337.jpg";
 
 export default function BlogPage() {
   const { data: blogPosts, isLoading } = useQuery<BlogPost[]>({
@@ -52,7 +53,7 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center bg-texas-brown">
         <img 
-          src="/attached_assets/shutterstock_1979902337.jpg" 
+          src={bluebonnetImage} 
           alt="Texas Hill Country Bluebonnets" 
           className="absolute inset-0 w-full h-full object-cover"
         />

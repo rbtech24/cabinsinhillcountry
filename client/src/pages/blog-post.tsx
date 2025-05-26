@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Calendar, User, Clock } from "lucide-react";
 import { Link } from "wouter";
 import type { BlogPost } from "@shared/schema";
+import bluebonnetImage from "@assets/shutterstock_1979902337.jpg";
 
 export default function BlogPostPage() {
   const [match, params] = useRoute("/blog/:slug");
@@ -548,7 +549,7 @@ export default function BlogPostPage() {
       {/* Header */}
       <div className="relative bg-texas-brown text-white py-16">
         <img 
-          src="/attached_assets/shutterstock_1979902337.jpg" 
+          src={bluebonnetImage} 
           alt="Texas Hill Country Bluebonnets" 
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -593,7 +594,7 @@ export default function BlogPostPage() {
       {/* Featured Image */}
       <div className="relative h-96 overflow-hidden">
         <img 
-          src="/attached_assets/shutterstock_1979902337.jpg" 
+          src={bluebonnetImage} 
           alt="Texas Hill Country Bluebonnets"
           className="w-full h-full object-cover"
         />
