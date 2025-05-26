@@ -3,14 +3,17 @@ import {
   destinations, 
   events, 
   blogPosts,
+  newsletters,
   type Activity, 
   type Destination, 
   type Event, 
   type BlogPost,
+  type Newsletter,
   type InsertActivity,
   type InsertDestination,
   type InsertEvent,
-  type InsertBlogPost
+  type InsertBlogPost,
+  type InsertNewsletter
 } from "@shared/schema";
 
 export interface IStorage {
@@ -22,6 +25,9 @@ export interface IStorage {
   createDestination(destination: InsertDestination): Promise<Destination>;
   createEvent(event: InsertEvent): Promise<Event>;
   createBlogPost(blogPost: InsertBlogPost): Promise<BlogPost>;
+  subscribeToNewsletter(newsletter: InsertNewsletter): Promise<Newsletter>;
+  getNewsletterSubscribers(): Promise<Newsletter[]>;
+  isEmailSubscribed(email: string): Promise<boolean>;
 }
 
 export class MemStorage implements IStorage {
@@ -29,20 +35,24 @@ export class MemStorage implements IStorage {
   private destinations: Map<number, Destination>;
   private events: Map<number, Event>;
   private blogPosts: Map<number, BlogPost>;
+  private newsletters: Map<number, Newsletter>;
   private currentActivityId: number;
   private currentDestinationId: number;
   private currentEventId: number;
   private currentBlogPostId: number;
+  private currentNewsletterId: number;
 
   constructor() {
     this.activities = new Map();
     this.destinations = new Map();
     this.events = new Map();
     this.blogPosts = new Map();
+    this.newsletters = new Map();
     this.currentActivityId = 1;
     this.currentDestinationId = 1;
     this.currentEventId = 1;
     this.currentBlogPostId = 1;
+    this.currentNewsletterId = 1;
 
     // Initialize with sample data
     this.initializeData();
@@ -278,6 +288,37 @@ export class MemStorage implements IStorage {
     const blogPost: BlogPost = { ...insertBlogPost, id };
     this.blogPosts.set(id, blogPost);
     return blogPost;
+  }
+
+  async subscribeToNewsletter(insertNewsletter: InsertNewsletter): Promise<Newsletter> {
+    // Check if email already exists
+    const existingSubscriber = Array.from(this.newsletters.values()).find(
+      subscriber => subscriber.email === insertNewsletter.email && subscriber.isActive
+    );
+    
+    if (existingSubscriber) {
+      throw new Error('Email already subscribed');
+    }
+
+    const id = this.currentNewsletterId++;
+    const newsletter: Newsletter = { 
+      ...insertNewsletter, 
+      id,
+      subscribedAt: new Date(),
+      isActive: true
+    };
+    this.newsletters.set(id, newsletter);
+    return newsletter;
+  }
+
+  async getNewsletterSubscribers(): Promise<Newsletter[]> {
+    return Array.from(this.newsletters.values()).filter(subscriber => subscriber.isActive);
+  }
+
+  async isEmailSubscribed(email: string): Promise<boolean> {
+    return Array.from(this.newsletters.values()).some(
+      subscriber => subscriber.email === email && subscriber.isActive
+    );
   }
 }
 

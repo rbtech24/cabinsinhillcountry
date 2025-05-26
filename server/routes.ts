@@ -1,6 +1,8 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
+import { sendWelcomeEmail } from "./email";
+import { insertNewsletterSchema } from "@shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Activities endpoints
