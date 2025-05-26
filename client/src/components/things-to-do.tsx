@@ -42,23 +42,25 @@ export default function ThingsToDo() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {activities?.map((activity) => (
-            <Card key={activity.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src={activity.imageUrl} 
-                alt={activity.title} 
-                className="w-full h-48 object-cover"
-              />
-              <CardContent className="p-6">
-                <h3 className="font-playfair text-xl font-bold mb-2">{activity.title}</h3>
-                <p className="text-texas-slate mb-4">{activity.description}</p>
-                <div className="flex items-center text-texas-chocolate">
-                  <MapPin className="w-4 h-4 mr-2" />
-                  <span className="text-sm">{activity.location}</span>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+          {activities?.map((activity, index) => {
+            const colors = ['bg-texas-chocolate', 'bg-texas-purple', 'bg-texas-green', 'bg-texas-brown', 'bg-texas-peach', 'bg-texas-slate'];
+            const bgColor = colors[index % colors.length];
+            
+            return (
+              <Card key={activity.id} className={`${bgColor} rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow`}>
+                <CardContent className="p-6 text-white h-64 flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-playfair text-xl font-bold mb-3">{activity.title}</h3>
+                    <p className="text-white opacity-90 mb-4 text-sm leading-relaxed">{activity.description}</p>
+                  </div>
+                  <div className="flex items-center text-white opacity-80">
+                    <MapPin className="w-4 h-4 mr-2" />
+                    <span className="text-sm">{activity.location}</span>
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -62,46 +62,144 @@ export class MemStorage implements IStorage {
     // Activities
     const sampleActivities: InsertActivity[] = [
       {
-        title: "Wine Tours",
-        description: "Explore the famous Fredericksburg wine trail with over 50 wineries and vineyards.",
-        location: "Fredericksburg, TX",
-        imageUrl: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+        title: "Hill Country Wine Trail",
+        description: "Explore 50+ world-class wineries including Becker Vineyards, Fall Creek, and Grape Creek with guided tastings of award-winning Texas Tempranillo, Viognier, and Sangiovese.",
+        location: "Fredericksburg & Dripping Springs",
+        imageUrl: "",
         category: "Wine & Dining"
       },
       {
-        title: "River Adventures",
-        description: "Tube, swim, or kayak down the crystal-clear rivers of the Guadalupe and Frio.",
+        title: "Guadalupe River Tubing",
+        description: "Float down the crystal-clear Guadalupe River from Canyon Lake to New Braunfels. Perfect for families with gentle rapids and outfitter rentals available.",
         location: "New Braunfels, TX",
-        imageUrl: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+        imageUrl: "",
         category: "Water Activities"
       },
       {
-        title: "Hiking Trails",
-        description: "Discover scenic trails with limestone cliffs, wildflower meadows, and panoramic views.",
-        location: "Austin, TX Area",
-        imageUrl: "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+        title: "Jacob's Well Swimming",
+        description: "Swim in the famous natural spring with crystal-clear water at a constant 68-70°F. Advance reservations required for this pristine swimming hole.",
+        location: "Wimberley, TX",
+        imageUrl: "",
+        category: "Water Activities"
+      },
+      {
+        title: "Enchanted Rock Hiking",
+        description: "Hike the massive pink granite dome with panoramic Hill Country views. 1-mile summit trail plus easier base trails and stargazing programs.",
+        location: "Fredericksburg, TX",
+        imageUrl: "",
         category: "Outdoor Adventures"
       },
       {
-        title: "Historic Towns",
-        description: "Explore charming German heritage towns with unique shops, restaurants, and festivals.",
+        title: "Natural Bridge Caverns Tour",
+        description: "Explore spectacular underground limestone formations on guided 60-minute tours. Constant 70°F temperature with paved walkways throughout.",
+        location: "New Braunfels, TX",
+        imageUrl: "",
+        category: "Underground Adventures"
+      },
+      {
+        title: "Authentic Texas BBQ Trail",
+        description: "Experience legendary BBQ at Salt Lick (Driftwood), Kreuz Market (Lockhart), and other renowned smokehouses. Learn about traditional pit-smoking techniques.",
+        location: "Lockhart & Driftwood",
+        imageUrl: "",
+        category: "Food & Culture"
+      },
+      {
+        title: "German Heritage Towns",
+        description: "Explore Fredericksburg's authentic German culture with biergartens, bakeries, Main Street shopping, and the National Museum of the Pacific War.",
         location: "Fredericksburg, TX",
-        imageUrl: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+        imageUrl: "",
         category: "Culture & History"
       },
       {
-        title: "Stargazing",
-        description: "Experience some of the darkest skies in Texas at local observatories and state parks.",
-        location: "Cherry Spring State Park",
-        imageUrl: "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
-        category: "Outdoor Adventures"
+        title: "Dude Ranch Experiences",
+        description: "Stay at working cattle ranches like Mayan Dude Ranch or Dixie Dude Ranch. Horseback riding, cattle drives, campfire cookouts, and authentic cowboy culture.",
+        location: "Bandera, TX",
+        imageUrl: "",
+        category: "Ranch Life"
       },
       {
-        title: "Local Cuisine",
-        description: "Savor authentic Texas BBQ, German cuisine, and farm-to-table dining experiences.",
+        title: "Cherry Springs Dark Sky Stargazing",
+        description: "Experience some of the darkest skies in the United States at this International Dark-Sky Park. Star parties and astronomical events held regularly.",
+        location: "Cherry Spring State Park",
+        imageUrl: "",
+        category: "Stargazing"
+      },
+      {
+        title: "Antique Shopping in Round Top",
+        description: "Browse world-famous antique shows and year-round shops featuring Texas antiques, vintage finds, and handcrafted items from local artisans.",
+        location: "Round Top, TX",
+        imageUrl: "",
+        category: "Shopping"
+      },
+      {
+        title: "Hamilton Pool Preserve",
+        description: "Visit the stunning natural pool created by a collapsed underground river with a 50-foot waterfall. Advanced reservations required year-round.",
+        location: "Austin Area",
+        imageUrl: "",
+        category: "Natural Wonders"
+      },
+      {
+        title: "Lavender Farm Tours",
+        description: "Tour working lavender farms during harvest season (June-July). Learn about lavender cultivation, shop for products, and enjoy the fragrant fields.",
+        location: "Blanco & Fredericksburg",
+        imageUrl: "",
+        category: "Agricultural Tours"
+      },
+      {
+        title: "Comal River Adventures",
+        description: "Float the shortest river in Texas (2.5 miles) with constant 72°F spring-fed water. Perfect for beginners and families with calm, clear conditions.",
+        location: "New Braunfels, TX",
+        imageUrl: "",
+        category: "Water Activities"
+      },
+      {
+        title: "Historic Dance Halls",
+        description: "Experience authentic Texas music culture at Gruene Hall (oldest dance hall) and Luckenbach General Store with live country, blues, and folk performances.",
+        location: "Gruene & Luckenbach",
+        imageUrl: "",
+        category: "Music & Culture"
+      },
+      {
+        title: "Wildflower Photography Tours",
+        description: "Capture the famous Texas bluebonnets and wildflowers during peak season (March-May). Professional photography workshops and guided tours available.",
+        location: "Highway 290 Corridor",
+        imageUrl: "",
+        category: "Photography"
+      },
+      {
+        title: "Craft Distillery Tours",
+        description: "Sample award-winning spirits at Treaty Oak Distilling, Dripping Springs Vodka, and other local craft distilleries. Learn about grain-to-glass production.",
+        location: "Dripping Springs & Austin Area",
+        imageUrl: "",
+        category: "Spirits & Tasting"
+      },
+      {
+        title: "Austin City Limits Live Music",
+        description: "Experience live music at iconic venues like the Continental Club, Antone's, and Stubb's Bar-B-Q. Austin's music scene extends throughout Hill Country.",
+        location: "Austin, TX",
+        imageUrl: "",
+        category: "Live Music"
+      },
+      {
+        title: "Lake Travis Water Sports",
+        description: "Enjoy boating, jet skiing, and swimming on the clear waters of Lake Travis. Multiple marinas offer rentals and guided tours of the scenic lake.",
+        location: "Austin Area",
+        imageUrl: "",
+        category: "Water Sports"
+      },
+      {
+        title: "Fossil Hunting Adventures",
+        description: "Search for ancient fossils and artifacts in the limestone hills. Guided tours teach about the geological history of the Edwards Plateau.",
+        location: "Various Locations",
+        imageUrl: "",
+        category: "Educational"
+      },
+      {
+        title: "Farm-to-Table Dining",
+        description: "Experience restaurants sourcing ingredients from local Hill Country farms and ranches. Seasonal menus featuring Texas-grown produce and grass-fed beef.",
         location: "Throughout Hill Country",
-        imageUrl: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
-        category: "Wine & Dining"
+        imageUrl: "",
+        category: "Farm Dining"
       }
     ];
 
