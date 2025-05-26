@@ -144,52 +144,100 @@ export class MemStorage implements IStorage {
     // Events
     const sampleEvents: InsertEvent[] = [
       {
-        title: "Wildflower Festival",
-        description: "Celebrate the beautiful bluebonnets and wildflowers with guided tours, photography workshops, and local vendors.",
-        date: "March 15-17, 2024",
-        location: "Fredericksburg, TX",
+        title: "53rd Annual Kerrville Folk Festival",
+        description: "Long-standing folk music festival with multiple stages, camping, workshops, and performances by renowned folk artists from across the country.",
+        date: "May 22 - June 8, 2025",
+        location: "Kerrville, TX",
+        category: "Music Festival",
+        icon: "fas fa-music"
+      },
+      {
+        title: "Blanco Lavender Festival",
+        description: "Celebrates the lavender harvest with vendors, food, live music, and guided lavender farm tours throughout the beautiful Hill Country.",
+        date: "June 6-8, 2025",
+        location: "Blanco, TX",
         category: "Seasonal",
         icon: "fas fa-seedling"
       },
       {
-        title: "Hill Country Wine & Music",
-        description: "Two days of wine tasting, live music, and local cuisine from the best Hill Country has to offer.",
-        date: "April 20-21, 2024",
-        location: "Various Wineries",
-        category: "Wine & Music",
-        icon: "fas fa-wine-glass-alt"
-      },
-      {
-        title: "Cowboy Capital Rodeo",
-        description: "Experience authentic Texas cowboy culture with bull riding, barrel racing, and country music concerts.",
-        date: "May 25-27, 2024",
-        location: "Bandera, TX",
-        category: "Rodeo",
+        title: "Stonewall Peach JAMboree & Rodeo",
+        description: "Celebrates the famous Hill Country peach harvest with authentic rodeo events, live music, and delicious peach dishes and desserts.",
+        date: "June 19-21, 2025",
+        location: "Stonewall, TX",
+        category: "Rodeo & Food",
         icon: "fas fa-horse"
       },
       {
-        title: "Summer Concert Series",
-        description: "Weekly outdoor concerts featuring country, folk, and blues artists under the Texas stars.",
-        date: "June - August 2024",
-        location: "Wimberley, TX",
-        category: "Music",
+        title: "Austin City Limits Music Festival",
+        description: "One of the nation's premier music festivals featuring top artists across multiple genres at the iconic Zilker Park venue.",
+        date: "October 3-5 & October 10-12, 2025",
+        location: "Austin, TX",
+        category: "Music Festival",
         icon: "fas fa-music"
       },
       {
-        title: "Fall Harvest Festival",
-        description: "Celebrate the season with pumpkin patches, apple picking, and harvest-themed activities for the whole family.",
-        date: "October 12-14, 2024",
-        location: "Dripping Springs, TX",
-        category: "Seasonal",
-        icon: "fas fa-leaf"
+        title: "Fredericksburg Oktoberfest",
+        description: "Authentic German heritage celebration with traditional polka music, German food, craft beer, and handmade crafts in the heart of Texas Hill Country.",
+        date: "October 3-5, 2025",
+        location: "Fredericksburg, TX",
+        category: "Cultural",
+        icon: "fas fa-beer"
       },
       {
-        title: "Holiday Lights Tour",
-        description: "Magical holiday light displays throughout Hill Country towns with special holiday markets and events.",
-        date: "December 1-31, 2024",
-        location: "Regional Tour",
+        title: "Wurstfest",
+        description: "New Braunfels' famous 'Ten Day Salute To Sausage' - massive German festival featuring authentic food, beer, live music, and carnival attractions.",
+        date: "October 31 - November 9, 2025",
+        location: "New Braunfels, TX",
+        category: "Cultural",
+        icon: "fas fa-beer"
+      },
+      {
+        title: "Formula 1 United States Grand Prix",
+        description: "High-speed Formula 1 racing and major concerts at Circuit of The Americas, featuring world-class drivers and entertainment.",
+        date: "October 17-19, 2025",
+        location: "Austin, TX",
+        category: "Sports",
+        icon: "fas fa-flag-checkered"
+      },
+      {
+        title: "Texas Monthly BBQ Fest",
+        description: "Celebrates Texas' legendary barbecue tradition with the state's best pitmasters, live music demonstrations, and authentic Texas BBQ.",
+        date: "November 1-2, 2025",
+        location: "Lockhart, TX",
+        category: "Food",
+        icon: "fas fa-fire"
+      },
+      {
+        title: "Lights Spectacular",
+        description: "Johnson City transforms into 'Twinkle Town' with dazzling holiday light displays throughout the historic downtown area.",
+        date: "November 15, 2025 - January 1, 2026",
+        location: "Johnson City, TX",
         category: "Holiday",
         icon: "fas fa-star"
+      },
+      {
+        title: "Fredericksburg Christmas Nights of Lights",
+        description: "German-Texas holiday celebration featuring spectacular light shows, traditional German Christmas markets, and festive entertainment.",
+        date: "November 28, 2025 - January 4, 2026",
+        location: "Fredericksburg, TX",
+        category: "Holiday",
+        icon: "fas fa-star"
+      },
+      {
+        title: "Wimberley Trail of Lights",
+        description: "Extensive holiday light display with magical walking trails through scenic Hill Country landscapes and themed light installations.",
+        date: "November 28 - December 31, 2025",
+        location: "Wimberley, TX",
+        category: "Holiday",
+        icon: "fas fa-star"
+      },
+      {
+        title: "Gillespie County Fair & Race Meet",
+        description: "Traditional county fair featuring horse racing, rodeo events, live country music, carnival rides, and authentic Texas fair food.",
+        date: "August 15-24, 2025",
+        location: "Fredericksburg, TX",
+        category: "Fair & Rodeo",
+        icon: "fas fa-horse"
       }
     ];
 
