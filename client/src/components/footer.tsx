@@ -17,9 +17,9 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-texas-slate text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-5 gap-8 w-full">
           {/* Company Info */}
-          <div>
+          <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div className="bg-texas-chocolate text-white p-3 rounded-lg">
                 <Mountain className="text-xl" />
