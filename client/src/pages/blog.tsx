@@ -6,6 +6,7 @@ import NewsletterSignup from "@/components/newsletter-signup";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight, Clock, User } from "lucide-react";
+import { Link } from "wouter";
 import type { BlogPost } from "@shared/schema";
 
 export default function BlogPage() {
@@ -83,9 +84,9 @@ export default function BlogPage() {
                   </div>
                   <h3 className="font-playfair text-2xl font-bold mb-4 text-texas-brown">{blogPosts[0].title}</h3>
                   <p className="text-texas-slate mb-6 text-lg">{blogPosts[0].excerpt}</p>
-                  <button className="text-texas-chocolate font-semibold hover:text-texas-brown transition-colors flex items-center">
+                  <Link href={`/blog/${blogPosts[0].slug}`} className="text-texas-chocolate font-semibold hover:text-texas-brown transition-colors flex items-center">
                     Read Full Article <ArrowRight className="w-4 h-4 ml-1" />
-                  </button>
+                  </Link>
                 </CardContent>
               </div>
             </Card>
@@ -137,12 +138,12 @@ export default function BlogPage() {
                     <h3 className="font-playfair text-xl font-bold mb-3 text-texas-brown">{post.title}</h3>
                     <p className="text-texas-slate mb-4">{post.excerpt}</p>
                     <div className="flex items-center justify-between">
-                      <button className="text-texas-chocolate font-semibold hover:text-texas-brown transition-colors flex items-center">
+                      <Link href={`/blog/${post.slug}`} className="text-texas-chocolate font-semibold hover:text-texas-brown transition-colors flex items-center">
                         Read More <ArrowRight className="w-4 h-4 ml-1" />
-                      </button>
+                      </Link>
                       <div className="flex items-center text-texas-slate text-sm">
                         <Clock className="w-4 h-4 mr-1" />
-                        5 min read
+                        8-12 min read
                       </div>
                     </div>
                   </CardContent>

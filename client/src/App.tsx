@@ -8,6 +8,7 @@ import ThingsToDoPage from "@/pages/things-to-do";
 import DestinationsPage from "@/pages/destinations";
 import EventsPage from "@/pages/events";
 import BlogPage from "@/pages/blog";
+import BlogPostPage from "@/pages/blog-post";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/destinations" component={DestinationsPage} />
       <Route path="/events" component={EventsPage} />
       <Route path="/blog" component={BlogPage} />
+      <Route path="/blog/:slug" component={BlogPostPage} />
       <Route component={NotFound} />
     </Switch>
   );
