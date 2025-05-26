@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 import type { BlogPost } from "@shared/schema";
 
 export default function Blog() {
@@ -58,18 +59,23 @@ export default function Blog() {
                 </div>
                 <h3 className="font-playfair text-xl font-bold mb-3">{post.title}</h3>
                 <p className="text-texas-slate mb-4">{post.excerpt}</p>
-                <button className="text-texas-chocolate font-semibold hover:text-texas-brown transition-colors flex items-center">
+                <Link 
+                  href={`/blog/${post.slug}`}
+                  className="text-texas-chocolate font-semibold hover:text-texas-brown transition-colors flex items-center"
+                >
                   Read More <ArrowRight className="w-4 h-4 ml-1" />
-                </button>
+                </Link>
               </CardContent>
             </Card>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full px-8 py-3 text-lg font-semibold">
-            View All Posts
-          </Button>
+          <Link href="/blog">
+            <Button className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full px-8 py-3 text-lg font-semibold">
+              View All Posts
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
