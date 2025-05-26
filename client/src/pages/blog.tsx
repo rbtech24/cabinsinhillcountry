@@ -48,13 +48,7 @@ export default function BlogPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-          style={{backgroundImage: "url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=600')"}}
-        ></div>
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        
+      <section className="relative h-96 flex items-center justify-center bg-texas-brown">
         <div className="relative z-10 text-center text-white px-4 max-w-4xl">
           <h1 className="font-playfair text-5xl md:text-6xl font-bold mb-4">Travel Blog</h1>
           <p className="text-xl md:text-2xl font-light">Insider tips and local stories from Hill Country</p>

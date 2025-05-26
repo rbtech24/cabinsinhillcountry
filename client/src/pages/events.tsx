@@ -47,13 +47,7 @@ export default function EventsPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-          style={{backgroundImage: "url('https://images.unsplash.com/photo-1458419948946-19fb2cc296af?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=600')"}}
-        ></div>
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        
+      <section className="relative h-96 flex items-center justify-center bg-texas-green">
         <div className="relative z-10 text-center text-white px-4 max-w-4xl">
           <h1 className="font-playfair text-5xl md:text-6xl font-bold mb-4">Events & Festivals</h1>
           <p className="text-xl md:text-2xl font-light">Celebrate the seasons in Hill Country</p>
