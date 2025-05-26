@@ -21,12 +21,14 @@ export default function HeroSection() {
         <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6">Discover Texas Hill Country</h1>
         <p className="text-xl md:text-2xl mb-8 font-light">Escape to rustic cabins, rolling hills, and endless adventures in the heart of Texas</p>
         <div className="space-x-4">
-          <Button 
-            onClick={() => scrollToSection('destinations')}
-            className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full px-8 py-3 text-lg font-semibold"
+          <a 
+            href="https://wimberleycabins.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full px-8 py-3 text-lg font-semibold inline-block transition-colors"
           >
             Explore Cabins
-          </Button>
+          </a>
           <Button 
             variant="outline"
             onClick={() => scrollToSection('things-to-do')}
