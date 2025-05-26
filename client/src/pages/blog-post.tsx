@@ -593,8 +593,8 @@ export default function BlogPostPage() {
       {/* Featured Image */}
       <div className="relative h-96 overflow-hidden">
         <img 
-          src={blogPost.imageUrl} 
-          alt={blogPost.title}
+          src="/attached_assets/shutterstock_1979902337.jpg" 
+          alt="Texas Hill Country Bluebonnets"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
