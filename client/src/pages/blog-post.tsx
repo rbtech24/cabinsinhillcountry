@@ -1,5 +1,8 @@
+import { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useRoute } from "wouter";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Calendar, User, Clock } from "lucide-react";
@@ -15,6 +18,11 @@ export default function BlogPostPage() {
   });
 
   const blogPost = blogPosts?.find(post => post.slug === slug);
+
+  // Scroll to top when page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (isLoading) {
     return (
@@ -535,7 +543,8 @@ export default function BlogPostPage() {
   };
 
   return (
-    <div className="min-h-screen bg-texas-cream pt-20">
+    <div className="min-h-screen bg-texas-cream">
+      <Navigation />
       {/* Header */}
       <div className="bg-texas-brown text-white py-16">
         <div className="container mx-auto px-4">
@@ -625,6 +634,8 @@ export default function BlogPostPage() {
           </Card>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 }
