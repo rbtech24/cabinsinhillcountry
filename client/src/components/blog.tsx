@@ -62,6 +62,7 @@ export default function Blog() {
                 <Link 
                   href={`/blog/${post.slug}`}
                   className="text-texas-chocolate font-semibold hover:text-texas-brown transition-colors flex items-center"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 >
                   Read More <ArrowRight className="w-4 h-4 ml-1" />
                 </Link>
@@ -71,7 +72,7 @@ export default function Blog() {
         </div>
 
         <div className="text-center mt-12">
-          <Link href="/blog">
+          <Link href="/blog" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <Button className="bg-texas-chocolate text-white hover:bg-texas-brown rounded-full px-8 py-3 text-lg font-semibold">
               View All Posts
             </Button>

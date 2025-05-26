@@ -555,7 +555,7 @@ export default function BlogPostPage() {
         />
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <Link href="/blog" className="inline-flex items-center text-texas-peach hover:text-white mb-6 transition-colors">
+          <Link href="/blog" className="inline-flex items-center text-texas-peach hover:text-white mb-6 transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Blog
           </Link>

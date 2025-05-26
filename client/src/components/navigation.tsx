@@ -32,7 +32,7 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-3" onClick={scrollToTop}>
             <div className="bg-texas-brown text-white p-3 rounded-lg">
               <Mountain className="text-xl" />
             </div>
