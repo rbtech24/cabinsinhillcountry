@@ -9,6 +9,10 @@ export default function Footer() {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer id="contact" className="bg-texas-slate text-white py-12">
       <div className="container mx-auto px-4">
@@ -48,6 +52,7 @@ export default function Footer() {
                 <Link 
                   href="/"
                   className="opacity-90 hover:opacity-100 transition-opacity"
+                  onClick={scrollToTop}
                 >
                   Home
                 </Link>
@@ -56,6 +61,7 @@ export default function Footer() {
                 <Link 
                   href="/things-to-do"
                   className="opacity-90 hover:opacity-100 transition-opacity"
+                  onClick={scrollToTop}
                 >
                   Things to Do
                 </Link>
@@ -64,6 +70,7 @@ export default function Footer() {
                 <Link 
                   href="/destinations"
                   className="opacity-90 hover:opacity-100 transition-opacity"
+                  onClick={scrollToTop}
                 >
                   Destinations
                 </Link>
@@ -72,6 +79,7 @@ export default function Footer() {
                 <Link 
                   href="/events"
                   className="opacity-90 hover:opacity-100 transition-opacity"
+                  onClick={scrollToTop}
                 >
                   Events
                 </Link>
@@ -80,6 +88,7 @@ export default function Footer() {
                 <Link 
                   href="/blog"
                   className="opacity-90 hover:opacity-100 transition-opacity"
+                  onClick={scrollToTop}
                 >
                   Blog
                 </Link>

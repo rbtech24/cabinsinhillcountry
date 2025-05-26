@@ -15,6 +15,10 @@ export default function Navigation() {
     setIsOpen(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Things to Do", href: "/things-to-do" },
@@ -45,6 +49,7 @@ export default function Navigation() {
                 key={item.label}
                 href={item.href}
                 className="hover:text-texas-chocolate transition-colors font-medium text-texas-slate"
+                onClick={scrollToTop}
               >
                 {item.label}
               </Link>
@@ -71,7 +76,10 @@ export default function Navigation() {
                     key={item.label}
                     href={item.href}
                     className="text-left hover:text-texas-chocolate transition-colors font-medium text-texas-slate py-2"
-                    onClick={() => setIsOpen(false)}
+                    onClick={() => {
+                      setIsOpen(false);
+                      scrollToTop();
+                    }}
                   >
                     {item.label}
                   </Link>

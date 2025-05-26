@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "wouter";
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import ThingsToDo from "@/components/things-to-do";
